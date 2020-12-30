@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Israeli Political Party Generator</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+  <meta property="og:title" content='Israeli Political Party Name Generator' />
+  <meta property="og:type" content="Create your own Israeli political party name!" />
+  <meta property="og:url" content="<%= request.original_url %>" />
+  <meta property="og:image" content="images/cover.jpg" />
+  <meta property="og:description" content='Want to create a party to run in the next Israeli election? Generate your political party name in seconds!' />
+  <meta property="og:site_name" content='Israeli Political Party Name Generator' />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content='Israeli Political Party Name Generator'>
+  <meta name="twitter:description" content='Want to create a party to run in the next Israeli election? Generate your political party name in seconds!'>
+  <meta name="twitter:creator" content="@rabbigreenberg">
+  <meta name="twitter:image:src" content="images/cover.jpg">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
